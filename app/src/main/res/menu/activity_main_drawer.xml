@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hb"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/monthly_bayans"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Monthly Bayans" />
+        <item
+            android:id="@+id/downloads"
+            android:icon="@drawable/ic_file_download_black_24dp"
+            android:title="Downloads" />
+        <item
+            android:id="@+id/comingEvents"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Up Coming Events" />
+        <item
+            android:id="@+id/joingroup"
+            android:autoLink="web"
+            android:icon="@drawable/whatsapp"
+            android:title="Join Group" />
+        <item
+            android:id="@+id/livebayan"
+            android:autoLink="web"
+            android:icon="@drawable/live"
+            android:title="Live Recording" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/ic_contacts_black_24dp"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+
+</menu>

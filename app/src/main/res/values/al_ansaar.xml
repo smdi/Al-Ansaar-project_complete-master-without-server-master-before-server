@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="faded">
+        <item> الأنصار</item>
+        <item>Al Ansaar</item>
+        <item> الأنصار</item>
+        <item>Al Ansaar</item>
+    </string-array>
+</resources>

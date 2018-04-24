@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topRelative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:innerRadius="4dp"
+        android:shape="rectangle"
+        android:thicknessRatio="10"
+        app:cardMaxElevation="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <RelativeLayout
+            android:id="@+id/Layout_inCard"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/alansarcontacts"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/alansare" />
+
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alansarcontacts"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/alansarcontacts"
+                android:lineSpacingExtra="3dp"
+                android:text="Shaik Mohammad Imran"
+                android:textScaleX=".9"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:tooltipText="this is  description" />
+
+
+            <TextView
+                android:id="@+id/profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/contactName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:text="Mufti sab"
+                android:textScaleX=".9"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:tooltipText="hello" />
+
+
+
+            <ImageView
+                android:id="@+id/mailIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/gmailc"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:linksClickable="true"
+                android:layout_toRightOf="@id/mailIcon"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:text="smdimran838@dmail.com"
+                android:autoLink="email"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

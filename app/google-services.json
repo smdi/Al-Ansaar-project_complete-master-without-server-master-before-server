@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "812693437959",
+    "firebase_url": "https://al-ansaar-f950b.firebaseio.com",
+    "project_id": "al-ansaar-f950b",
+    "storage_bucket": "al-ansaar-f950b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812693437959:android:ecd9d85fab8d1f68",
+        "android_client_info": {
+          "package_name": "al_muntaqimcrescent2018.com.al_ansar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812693437959-qsk9t37ndql8r1p0bthvmh6tfirenc1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbvvTfauphpYTOYfp8OfQWFJpfy4LcHj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

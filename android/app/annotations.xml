@@ -1,0 +1,5 @@
+<root>
+    <item name='android.app.FragmentTransaction'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

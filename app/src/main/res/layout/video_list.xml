@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainrelay"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewDownloads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:innerRadius="4dp"
+        android:shape="rectangle"
+        android:thicknessRatio="10"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <RelativeLayout
+
+            android:id="@+id/aboveInCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/alansar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="#FFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/alansare" />
+
+            <RelativeLayout
+                android:id="@+id/Layout_inCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/imageViewRelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="WebViewLayout">
+
+                    <WebView
+                        android:id="@+id/CircularImageOntop"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="80dp"
+                        android:background="#FFF"></WebView>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/loadvideo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignTop="@id/CircularImageOntop"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="60dp"
+                        android:elevation="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/descriptionmedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="87dp"
+                        android:layout_marginTop="14dp"
+                        android:lineSpacingExtra="3dp"
+                        android:maxLines="3"
+                        android:text="heading"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textColorHint="#000"
+                        android:tooltipText="this is  description" />
+                </RelativeLayout>
+
+
+                <ImageButton
+                    android:id="@+id/enlarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/datemedia"
+                    android:layout_marginStart="15dp"
+                    android:background="#FFF"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/fullscreen" />
+
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/enlarge"
+                    android:layout_marginStart="18dp"
+                    android:background="#FFF"
+                    android:layout_toEndOf="@id/enlarge"
+                    android:src="@drawable/shareoptionst" />
+
+
+                <ImageButton
+                    android:id="@+id/downloadOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/enlarge"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/share"
+                    android:background="#FFF"
+                    android:src="@drawable/ic_file_download_black_24dp" />
+
+
+                <com.tomer.fadingtextview.FadingTextView
+                    android:id="@+id/datemedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/imageViewRelay"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="29 jan 2018"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:tooltipText="hello"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

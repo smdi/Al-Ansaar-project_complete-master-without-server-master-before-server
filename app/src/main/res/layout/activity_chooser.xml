@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373126"
+    tools:context="al_muntaqimcrescent2018.com.al_ansar.chooser">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/plusbutton" />
+
+
+      <EditText
+          android:id="@+id/headingChoose"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/add"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="66dp"
+          android:ems="10"
+          android:hint="heading"
+          android:inputType="textMultiLine"
+          android:textAlignment="center"
+          android:textColor="#FFF"
+          android:textColorHint="#FFF" />
+
+      <EditText
+          android:id="@+id/links"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/descriptionChoose"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="66dp"
+          android:ems="10"
+          android:hint="provide link"
+          android:inputType="textMultiLine"
+          android:textAlignment="center"
+          android:textColor="@color/colorPrimaryDark"
+          android:textColorHint="@color/colorPrimaryDark" />
+
+    <RelativeLayout
+        android:id="@+id/lotteRel"
+        android:background="#FFF"
+        android:elevation="12dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+      <com.airbnb.lottie.LottieAnimationView
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/animation_view"
+          android:visibility="gone"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="120dp"
+          android:layout_height="120dp"
+          />
+
+    </RelativeLayout>
+
+
+      <EditText
+          android:id="@+id/descriptionChoose"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_below="@+id/headingChoose"
+          android:layout_marginTop="44dp"
+          android:ems="10"
+          android:hint="description"
+          android:inputType="textMultiLine"
+          android:textAlignment="center"
+          android:textColor="#FFF"
+          android:textColorHint="#FFF" />
+  </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

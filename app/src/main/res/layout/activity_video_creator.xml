@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context="al_muntaqimcrescent2018.com.al_ansar.VideoCreator">
+
+
+    <RelativeLayout
+        android:id="@+id/lotteRel"
+        android:background="#FFF"
+        android:elevation="12dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/animation_view"
+            android:elevation="2dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/youtube_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="123dp"
+        android:ems="10"
+        android:hint="link"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="#F3A2D3" />
+
+
+    <EditText
+        android:id="@+id/videodescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/youtube_link"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="media description"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#ED3DA8"
+        android:textColorHint="#F3A2D3" />
+
+</RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

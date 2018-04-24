@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topRelative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:innerRadius="4dp"
+        android:shape="rectangle"
+        android:thicknessRatio="10"
+        app:cardMaxElevation="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+<RelativeLayout
+
+    android:id="@+id/aboveInCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/alansar"
+        android:background="#FFF"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/alansare"
+        />
+
+        <RelativeLayout
+            android:id="@+id/Layout_inCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="73dp"
+                android:id="@+id/imageViewRelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/CircularImageOntop"
+                    android:background="#FFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/main_head"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/downloadbut"
+                android:text="This is Heading"
+                android:textColor="#000"
+                android:textScaleX="0.9"
+                android:textSize="15sp"
+                android:tooltipText="hello" />
+
+            <TextView
+                android:id="@+id/description"
+                android:maxLines="3"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/imageViewRelay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="description"
+                android:textScaleX=".9"
+                android:textColor="#000"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:tooltipText="this is  description"
+                android:textSize="15sp" />
+
+            <com.tomer.fadingtextview.FadingTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="29 jan 2018"
+                android:layout_below="@id/description"
+                android:layout_marginTop="7dp"
+                android:textColor="#DADFE3"
+                android:layout_marginRight="7dp"
+                android:tooltipText="hello"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="show more"
+                android:textColor="#000"
+                android:layout_below="@id/description"
+                android:layout_marginTop="7dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/shareoptionst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/description"
+                android:layout_alignParentLeft="true"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/downloadbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/share"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/share"
+                android:elevation="2dp"
+                android:src="@drawable/ic_file_download_black_24dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/linkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/share"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/downloadbut"
+                android:elevation="2dp"
+                android:src="@drawable/linkbutton"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
